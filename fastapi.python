@@ -1,0 +1,8 @@
+from fastapi import FastAPI
+global app
+app =fastAPI()
+
+@app.get("/get-message")
+
+async def read_root():
+    return {"Message":"Congrats Ian, you managed it finally !!!"}
